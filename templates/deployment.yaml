@@ -1,0 +1,12 @@
+kind: Pod
+metadata:
+  name: kubia
+  labels:
+    app: kubia                
+spec:
+  containers:
+  - image: nginx:1.17.6
+    name: nginx
+    ports:
+    - containerPort: 8080
+      protocol: TCP
